@@ -692,6 +692,114 @@
                 text-align: center;
             }
         }
+
+        .contact-options {
+            width: 100%;
+            max-width: 800px;
+
+            margin: 52px auto 0;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 16px;
+
+            text-align: left;
+        }
+
+        .contact-card {
+            padding: 30px;
+
+            display: flex;
+            flex-direction: column;
+
+            border: 1px solid #1e293b;
+            border-radius: 16px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(15, 23, 42, 0.65),
+                    rgba(15, 23, 42, 0.25)
+                );
+
+            transition:
+                transform 180ms ease,
+                border-color 180ms ease,
+                background 180ms ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-3px);
+
+            border-color: #334155;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(20, 31, 52, 0.8),
+                    rgba(15, 23, 42, 0.35)
+                );
+        }
+
+        .contact-card-label {
+            margin-bottom: 28px;
+
+            color: #60a5fa;
+
+            font-size: 11px;
+            font-weight: 700;
+
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .contact-card h3 {
+            margin: 0 0 10px;
+
+            color: #e2e8f0;
+
+            font-size: 22px;
+            font-weight: 650;
+
+            letter-spacing: -0.035em;
+        }
+
+        .contact-card p {
+            min-height: 70px;
+
+            margin: 0 0 26px;
+
+            color: #64748b;
+
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .contact-card .button-primary,
+        .contact-card .button-secondary {
+            width: fit-content;
+        }
+
+        .contact-email {
+            margin-top: 18px;
+
+            color: #475569;
+
+            font-size: 12px;
+        }
+
+        @media (max-width: 650px) {
+
+            .contact-options {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-card p {
+                min-height: auto;
+            }
+
+        }
     </style>
 </head>
 
@@ -1165,7 +1273,7 @@
 
 
                 <h2>
-                    We're building what's next.
+                    We're building a workflow.
                 </h2>
 
 
@@ -1189,6 +1297,89 @@
                     <a href="mailto:interested@mindedflow.com">
                         interested@mindedflow.com
                     </a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section cta">
+
+            <div class="section-inner">
+
+                <div class="section-eyebrow">
+                    What if?
+                </div>
+
+                <h2>
+                    Questions or something else?
+                </h2>
+
+                <p class="section-description" style="margin-left:auto; margin-right:auto;">
+                    Whether you need help, have a question or simply want to get in touch,
+                    we're here to point you in the right direction.
+                </p>
+
+
+                <div class="contact-options">
+
+                    <article class="contact-card">
+
+                        <div class="contact-card-label">
+                            Support
+                        </div>
+
+                        <h3>
+                            Have a question?
+                        </h3>
+
+                        <p>
+                            Need help with Mindedflow or want to know more
+                            about how something works?
+                        </p>
+
+                        <a
+                            href="mailto:help@mindedflow.com"
+                            class="button-secondary"
+                        >
+                            Get help →
+                        </a>
+
+                        <span class="contact-email">
+                            help@mindedflow.com
+                        </span>
+
+                    </article>
+
+
+                    <article class="contact-card">
+
+                        <div class="contact-card-label">
+                            Contact
+                        </div>
+
+                        <h3>
+                            Want to talk?
+                        </h3>
+
+                        <p>
+                            For partnerships, ideas, opportunities or anything
+                            else related to Mindedflow.
+                        </p>
+
+                        <a
+                            href="mailto:contact@mindedflow.com"
+                            class="button-primary"
+                        >
+                            Contact us →
+                        </a>
+
+                        <span class="contact-email">
+                            contact@mindedflow.com
+                        </span>
+
+                    </article>
+
                 </div>
 
             </div>
